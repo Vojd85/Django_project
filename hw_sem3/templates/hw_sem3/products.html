@@ -1,0 +1,22 @@
+{% extends 'hw_sem3/index.html' %}
+
+{% block title %}Товары{% endblock %}
+
+{% block content %}
+<h3>
+    Список товаров 
+    {% if time == 'week' %}
+    за неделю
+    {% elif time == 'month' %}
+    за месяц
+    {% elif time == 'year' %}
+    за год
+    {% endif %}
+    пользователя {{ client.name }}
+</h3>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
