@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'hw_sem1',
     'hw_sem2',
     'hw_sem3',
+    'hw_sem4',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +125,11 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# User DIRS
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 # Logging
 

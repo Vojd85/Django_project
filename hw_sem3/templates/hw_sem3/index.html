@@ -10,6 +10,7 @@
     <h2>Список товаров:</h2>
     {% for product in products %}
         <h3>{{ product.name }}</h3>
+        <img src="{{ product.image.url }}" alt="Изображение">
         <p>Описание: {{ product.description}}</p>
         <p>Цена: {{ product.price}}</p>
         <p>Количество: {{ product.count}}</p>
