@@ -24,4 +24,7 @@ urlpatterns = [
     path('hw_sem1/', include('hw_sem1.urls')),
     path('hw_sem3/', include('hw_sem3.urls')),
     path('hw_sem4/', include('hw_sem4.urls')),
+    # path('__debug__/', include("debug_toolbar.urls")),
+    # path('hw_sem6/', include('hw_sem6.urls')),
+
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
